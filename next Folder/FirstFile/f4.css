@@ -1,0 +1,41 @@
+.bac{
+    width:500px;
+    height:250px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    margin-left: -10px;
+}
+.text-pink{
+    color:#f92672;
+}
+.text-green{
+    color:#bdf67a;
+}
+.text-yelo{
+    color:#e6db74;
+}
+a:hover{
+    text-decoration: none;
+ }
+ .headr{
+    color:blue;
+    background-color: white;
+    height: 100px;
+}
+nav {
+    float: left;
+    width: 80px;
+    margin-top: -60px;
+    margin-left: -30px;
+    height: 1420px; 
+    background-color:blue;
+    padding: 20px;
+  
+  }
+  span{
+      color:black
+  }
+  
+ 

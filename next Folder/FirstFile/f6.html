@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="f6.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container"style="display:flex">
+            <h4 class="headr">MAAKEETOO</h4>
+           <a href="f4.html"><img src="https://www.flaticon.com/svg/vstatic/svg/660/660527.svg?token=exp=1620803327~hmac=0d33e697cf39c6825f5298be80e6e901"style="width:30px;margin-left:50px"><br>
+            <img src="https://www.flaticon.com/svg/vstatic/svg/660/660527.svg?token=exp=1620803327~hmac=0d33e697cf39c6825f5298be80e6e901"style="width:30px;margin-top:-50px;margin-left:50px"><br>
+            <img src="https://www.flaticon.com/svg/vstatic/svg/660/660527.svg?token=exp=1620803327~hmac=0d33e697cf39c6825f5298be80e6e901"style="width:30px;margin-top:-90px;margin-left:50px"></a> 
+        </div>
+        <div class="jumbotron container-fluid bg">
+            <nav >
+                <ul class="navbar-nav  ml-auto">
+                  <li class="nav-item"><a href="#"><img src="https://image.flaticon.com/icons/png/128/1946/1946436.png" style="width: 15px;height: 15px;"><span>PROJECTS</span></a></li><hr/>
+                  <li class="nav-item"><a href="#"><img src="https://image.flaticon.com/icons/png/128/2915/2915751.png" style="width: 15px;height: 15px;"><span>DOCS</span></a></li><hr/>
+                  <li class="nav-item"><a href="#"><img src="https://image.flaticon.com/icons/png/128/271/271226.png" style="width: 15px;height: 15px;"><span>LOG OUT</span></a></li>
+                </ul>
+              </nav>
+              <div>
+        <div class="jumbotron container-fluid">
+            <h1 class="d-flex justify-content-center">Documentation</h1>
+            <p>Make a<a href="f3.html"> new project</a> or <a href="f1.html">select an existing one.</a></p>
+            <p>Make a <a href="f5.html">new form</a> or select one from your projects.</p>
+            <p>From your form page, note the endpoint and the accesscode</p>
+            <img src="https://forms.maakeetoo.com/staticfiles/docs.png"style="width:450px">
+            <h1>To send data</h1>
+            <p>Have the form POST on the above endpoint.</p>
+            <div class="container bac">
+            <p>
+            <span>&lt;</span>
+            <span class="text-pink">form</span>
+            <span class="text-green">&nbsp;action</span>
+            <span class="text-yelo">=</span>
+            <span class="text-yelo">"getform-endpoint"</span>
+            <span class="text-green">method</span>
+            <span class="text-yelo">="POST"</span>
+            <span>&gt;</span>
+            </p>
+            <p>
+              <span>&lt;</span>
+              <span class="text-pink">label</span>
+              <span class="text-green">&nbsp;for</span>
+              <span class="text-white">&gt;</span>
+              <span class="text-white">Your Email</span>
+              <span class="text-white">&lt;/</span>
+              <span class="text-pink">label</span>
+              <span>&gt;</span>
+              </p>
+              <p>
+                <span>&lt;</span>
+                <span class="text-pink">input</span>
+                <span class="text-green">&nbsp;name</span>
+                <span class="text-white">="</span>
+                <span class="text-yelo">email</span>
+                <span class="text-green">id</span>
+                <span class="text-white">="</span>
+                <span class="text-yelo">email</span>
+                <span class="text-white">"</span>
+                <span class="text-green">&nbsp;type</span>
+                <span class="text-white">="</span>
+                <span class="text-yelo">email</span>
+                <span class="text-white">"</span>
+                <span>&gt;</span>
+                </p>
+                <p>
+                  <span>&lt;</span>
+                  <span class="text-pink">button</span>
+                  <span class="text-green">&nbsp;type</span>
+                  <span class="text-yelo">="</span>
+                  <span class="text-yelo">submit</span>
+                  <span class="text-green">"&gt;</span>
+                  <span class="text-white">Submit</span>
+                  <span>&lt;/</span>
+                  <span class="text-pink">button</span>
+                  <span>&gt;</span>
+                  </p>
+                  <p>
+                    <span class="text-pink">&lt;/form&gt;</span>
+                  </p>
+            </div>
+            <p>You can choose from.</p> 
+            <ul list-style-type="circle">
+                <li class="b">firstname</li>
+                <li class="b">middlename</li>
+                <li class="b">lastname</li>
+                <li class="b">phonenumber1</li>
+                <li class="b">phonenumber2</li>
+                <li class="b">phonenumber3</li>
+                <li class="b">dob</li>
+                <li class="b">email</li>
+                <li class="b">address</li>
+                <li class="b">city</li>
+                <li class="b">country</li>
+                <li class="b">state</li>
+                <li class="b">message</li>
+            </ul>
+            <p>Make sure the name attribute is exactly same as the fields you chose to include</p>
+            <h1>To get data</h1>
+            <p>Make a GET request to be same endpoint. Include the access code in the HTTP request header named as CODE</p>
+            <p>curl --header  "Code: &lt;access_code&gt; &lt;endpoint&gt;</p>
+            </div>        
+    </body>
+</html>
